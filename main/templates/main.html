@@ -9,7 +9,7 @@
             Rahida Syafa Nurdya
         </a>
         <a href="{% url 'main:logout' %}">
-            <button style = "background-color: #84c983;">
+            <button style="background-color: #84c983; color: #fff; padding: 5px 15px; border: none; border-radius: 5px;">
                 Logout
             </button>
         </a>
@@ -41,12 +41,12 @@
             <td>{{product.date_added}}</td>
             <td>
                 <a href="{% url 'main:edit_product' product.pk %}">
-                    <button>
+                    <button style="background-color: #84c983; color: #fff; padding: 5px 15px; border: none; border-radius: 5px;">
                         Edit
                     </button>
                 </a>
                 <a href="{% url 'main:delete_product' product.pk %}">
-                      <button>
+                    <button style="background-color: #84c983; color: #fff; padding: 5px 15px; border: none; border-radius: 5px;">
                           Delete
                       </button>
                   </a>
@@ -58,7 +58,7 @@
 <br />
 
 <a href="{% url 'main:create_product' %}">
-    <button>
+    <button style="background-color: #84c983; color: #fff; padding: 5px 15px; border: none; border-radius: 5px;">
         Add New Product
     </button>
 </a>

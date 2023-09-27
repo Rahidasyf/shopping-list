@@ -22,6 +22,9 @@ def create_product(request):
         product.user = request.user
         product.save()
         return HttpResponseRedirect(reverse('main:show_main'))
+    
+    context = {'form': form}
+    return render(request, "create_product.html", context)
 
 @login_required(login_url='/login')
 def show_main(request):
